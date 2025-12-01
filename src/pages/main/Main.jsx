@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getCharacters } from "../../service/characters";
 import Header from "../../components/Header/Header";
+import { Link } from "react-router";
 
 const Main = () => {
   const [characters, setCharacters] = useState([]);
@@ -34,9 +35,9 @@ const Main = () => {
               Фан-сайт, вдохновлённый эстетикой JoJo's Bizarre Adventure.
               Персонажи, сезоны, манга и многое другое.
             </p>
-            <a class="btn-primary" href="seasons.html">
+            <Link class="btn-primary" to="/seasons">
               Начать путешествие
-            </a>
+            </Link>
           </div>
           <div class="media">
             <img
