@@ -3,7 +3,7 @@ import api from "./api";
 
 const token = localStorage.getItem("lena_token");
 
-const BASE_API = "http://localhost:8080/api";
+const BASE_API = "https://lena-server.onrender.com/api";
 
 export const createCharacter = async (data) => {
   const res = await axios.post(`${BASE_API}/items`, data, {
