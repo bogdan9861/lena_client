@@ -21,7 +21,7 @@ const useUser = () => {
         }
       } catch (err) {
         if (isMounted) setError(err);
-        navigate("/sign", { isRegister: false });
+        navigate("/login", { isRegister: false });
       } finally {
         if (isMounted) setLoading(false);
       }
